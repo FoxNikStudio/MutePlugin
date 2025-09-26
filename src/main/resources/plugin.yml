@@ -1,0 +1,16 @@
+name: MutePlugin
+version: 1.0.0
+main: com.yourname.muteplugin.MutePlugin
+api-version: 1.21
+commands:
+  mute:
+    description: Замутить игрока для себя
+    usage: /mute <ник>
+  ad mute:
+    description: Глобальный мут игрока
+    usage: /ad mute <ник> [время]
+    permission: muteplugin.admute
+permissions:
+  muteplugin.admute:
+    description: Доступ к команде ad mute
+    default: op
